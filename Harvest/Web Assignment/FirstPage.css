@@ -1,0 +1,320 @@
+body { 
+    background-color: #f4f4f4; /* Lighter background for better contrast */
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a; /* Dark background for header */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation bar styling */
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FF5733; /* Highlight color for hover effect */
+    color: #ffffff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn:hover {
+    background-color: #FF5733; /* Highlight color for hover effect */
+    color: #ffffff;
+}
+
+/* Dropdown arrow */
+.arrow {
+    margin-left: 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5733; /* Highlight color for dropdown items */
+    color: #ffffff;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Destination section styling */
+.destinations {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.destination {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: #ffffff; /* White background for destination cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.destination img {
+    max-width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+.destination a {
+    display: block;
+    color: #1a1a1a;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.destination a:hover {
+    color: #FF5733; /* Highlight color on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a1a1a; /* Dark background for footer */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #333333; /* Darker background for footer sections */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.footer-column {
+    margin: 10px 20px;
+}
+
+.footer-column h3 {
+    color: #FF5733; /* Highlight color for footer headings */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: #ffffff; /* White text for footer links */
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #FF5733; /* Highlight color on hover */
+}
+
+.footer-column img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+/* Styles for Login and Sign Up Forms */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for forms */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #1a1a1a; /* Dark text for form headings */
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1a; /* Dark button background */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #FF5733; /* Highlight color for button on hover */
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container a {
+    color: #1a1a1a; /* Dark color for form links */
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for the contact form */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px; /* Increased height for the message box */
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+    display: block;
+    margin: 5px 0;
+}
