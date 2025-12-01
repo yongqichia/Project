@@ -1,0 +1,159 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Logo Styles */
+header .logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Navigation Styles */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Ensures spacing between each nav item */
+    padding: 0;  /* Remove any default padding */
+    margin: 0;  /* Remove any default margin */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #111;  /* Updated to match footer color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: #ff9e00;  /* Hover color to match footer */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: none;
+}
+
+/* Notification icon styles */
+.notification-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px; /* Add space between login and notification */
+    cursor: pointer;
+}
+
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon img {
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Notification popup */
+.notification-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.popup-body {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    margin-bottom: 10px;
+}
+
+#close-popup {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    /* Header styles for smaller screens */
+    header {
+        flex-direction: column; /* Stack the header items */
+        padding: 10px 15px; /* Adjust padding for smaller viewports */
+    }
+
+    /* Logo adjustments */
+    header .logo img {
+        max-width: 60px; /* Reduce logo size */
+    }
+
+    header nav ul {
+        flex-direction: row; /* Stack items */
+        gap: 10px; /* Space between items */
+        padding-bottom: 20px; /* Add spacing below nav */
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Adjust spacing for better vertical alignment */
+    }
+
+    header nav ul li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    /* Notification icon */
+    .notification-container {
+        margin-left: 0; /* Remove extra spacing */
+    }
+
+    .notification-popup {
+        width: 90%; /* Ensure the popup is not too wide */
+        right: 5%; /* Center horizontally */
+    }
+}

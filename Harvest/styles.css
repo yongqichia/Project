@@ -1,0 +1,461 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* banner Section */
+.harvest-banner {
+    position: relative;
+    background-image: url('/FinalAssignment/images/harvest_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.harvest-banner .harvest-content {
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.harvest-banner h1 {
+    font-size: 50px;
+	margin-top: 150px;
+}
+
+.harvest-banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Home Page Workshop Section */
+.Hworkshops {
+    padding: 40px 20px;
+    background-color: #f7f7f7; /* Light gray background */
+    text-align: center;
+}
+
+.Hworkshops h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333; /* Dark color for heading */
+}
+
+/* Workshop List Styles */
+.Hworkshop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Workshop Card Styles */
+.Hworkshop-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Content Styling */
+.Hworkshop-card .card-content {
+   padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between lines */
+
+}
+
+.Hworkshop-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4; /* Ensures proper line height for readability */
+}
+
+.Hworkshop-card p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.6; /* Ensures lines of text have spacing between them */
+}
+
+.Hworkshop-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.Hworkshop-card a:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+.Hworkshop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #fff;
+    color: #ccc; /* Adjust text color */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #333; /* Add a top border to separate footer */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between; /* Align links and social media */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-links p {
+    margin: 5px 0;
+}
+
+footer .footer-links a {
+    color: #ccc; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #ff9e00; /* Change to your desired hover color */
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.1);
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999; /* Lighter color for footer text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .social-media {
+        margin-top: 20px;
+    }
+}
+
+
+/* Container for the donation form */
+.donation {
+    background-color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Form label and inputs */
+.donation p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.donation input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.donation select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.donation input[type="submit"] {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.donation input[type="submit"]:hover {
+    background-color: #e6b800;
+}
+
+/* About styles */
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Members Section Styling */
+.members {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+    justify-content: center;
+}
+
+.member_info {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.member_info:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.member_info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1a5276;
+}
+
+.member_info p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* General Styles for Overview Section */
+.overview {
+    background-color: #f9fafb;  /* Light gray background */
+    padding: 80px 20px;  /* Spacing around the text */
+    text-align: center;  /* Center-align the content */
+    color: #333;  /* Dark text for readability */
+    margin-bottom: 40px;  /* Space between sections */
+}
+
+.overview h2 {
+    font-size: 3rem;  /* Larger font size for the title */
+    font-weight: bold;  /* Bold for emphasis */
+    color: #1a202c;  /* Darker color for the heading */
+    margin-bottom: 20px;  /* Space below the heading */
+    line-height: 1.3;  /* Improved line spacing */
+}
+
+.overview p {
+    font-size: 1.25rem;  /* Slightly larger text for paragraph */
+    max-width: 800px;  /* Limit paragraph width for better readability */
+    margin: 0 auto;  /* Center the text */
+    line-height: 1.6;  /* Increase line height for readability */
+    color: #555;  /* Softer gray for body text */
+}
+
+/* Add background image to the overview section if needed */
+.overview:nth-child(odd) {
+    background-color: #edf2f7;  /* Light blue background for alternating sections */
+}
+
+.overview:nth-child(even) {
+    background-color: #ffffff;  /* White background for alternating sections */
+}
+
+/* Add a shadow effect to section if you prefer a subtle depth effect */
+.overview {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* SDG Images Section */
+.sdg-images {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.sdg-images h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sdg-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sdg-item {
+    margin: 15px;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+}
+
+.sdg-item img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sdg-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* rating styles */
+/* Overall form styling */
+.review-form {
+    max-width: 600px;  /* Limit form width */
+    margin: 30px auto;  /* Center the form on the page */
+    padding: 20px;
+    background-color: #f9fafb;  /* Light background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Title Styling */
+.review-form h2 {
+    text-align: center;  /* Center-align the title */
+    font-size: 2rem;  /* Larger font size */
+    color: #333;  /* Dark text color */
+    margin-bottom: 20px;  /* Space below the title */
+}
+
+/* Label Styling */
+.review-form label {
+    display: block;  /* Makes labels block-level for easier alignment */
+    font-size: 1rem;  /* Font size for the label */
+    margin-bottom: 8px;  /* Space below the label */
+    color: #444;  /* Soft dark text */
+}
+
+/* Textarea Styling */
+.review-form textarea {
+    width: 100%;  /* Full-width textarea */
+    padding: 10px;  /* Padding inside textarea */
+    font-size: 1rem;  /* Font size inside textarea */
+    border: 1px solid #ccc;  /* Border color */
+    border-radius: 5px;  /* Rounded corners */
+    resize: vertical;  /* Allow vertical resizing */
+    margin-bottom: 15px;  /* Space below textarea */
+    color: #333;  /* Dark text for textarea */
+    background-color: #fff;  /* White background */
+}
+
+.rating-stars {
+    display: flex;  /* Use flexbox to align items in a row */
+    justify-content: center;  /* Center the stars horizontally */
+    gap: 10px;  /* Space between the stars */
+    margin-bottom: 15px;  /* Space below the star rating */
+}
+	
+/* Submit Button Styling */
+.submit-btn {
+    display: block;  /* Make the button block-level */
+    width: 100%;  /* Full-width button */
+    padding: 12px;
+    background-color: #28a745;  /* Green background for the button */
+    color: white;  /* White text */
+    font-size: 1rem;  /* Button text size */
+    border: none;  /* Remove default border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    text-align: center;  /* Center the text inside the button */
+    transition: background-color 0.3s ease;  /* Smooth transition on hover */
+}
+
+.submit-btn:hover {
+    background-color: #218838;  /* Darker green on hover */
+}
+
+.submit-btn:active {
+    background-color: #1e7e34;  /* Even darker green when clicked */
+}
+
